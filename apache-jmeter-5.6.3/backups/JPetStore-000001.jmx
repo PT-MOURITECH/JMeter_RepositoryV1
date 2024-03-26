@@ -9,7 +9,7 @@
       </elementProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
     </TestPlan>
-    <hashTree>
+    <hashTree> 
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="host" elementType="Argument">
