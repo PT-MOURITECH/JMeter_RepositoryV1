@@ -1,15 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/PT-MOURITECH/JMeter_RepositoryV1.git'
-            }
-        }
-        stage('Run JMeter Test') {
+       
+     stage('Run JMeter Test') {
             steps {
                 script {
-                    sh '"C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat" -n -t "C:\\apache-jmeter-5.6.3\\bin\\JPetStore.jmx" -l "result.jtl"'
+                    bat '"C:\\apache-jmeter-5.6.3\\bin\\jmeter" -n -t "C:\\apache-jmeter-5.6.3\\bin\\JPetStore.jmx" -l "result.jtl"'
                 }
             }
         }
